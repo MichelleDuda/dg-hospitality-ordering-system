@@ -20,5 +20,6 @@ from ordering_system import views as ordering_views
 
 urlpatterns = [
     path('', ordering_views.ordering, name='ordering'),
+    path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
 ]
